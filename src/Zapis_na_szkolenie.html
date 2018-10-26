@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<head>
+    <div class="custom-control custom-checkbox">
+    <meta charset="UTF-8">
+    <title>Formularz zapisu na szkolenie </title>
+    </div>
+</head>
+<body>
+<h2>Zapis na szkolenie</h2>
+
+<form method="post" action="mailto:basiakmiecik@gmail.com">
+    <div class="form-row align-items-center">
+    <ul>
+    <p> Imię: <input type="text" name="FirstName"></p>
+
+    <p>Nazwisko: <input type="text" name="LastName"></p>
+
+    <p>Data urodzenia: <ol> <input type="number" name="DayBirth" min="0" max="31">
+
+        <select>
+
+            <option>styczeń</option>
+            <option>luty</option>
+            <option>marzec</option>
+            <option>kwiecień</option>
+            <option>maj</option>
+            <option>czerwiec</option>
+            <option>lipiec</option>
+            <option>sierpień</option>
+            <option>wrzesień</option>
+            <option>październik</option>
+            <option>listopad</option>
+            <option>grudzień</option>
+        </select>
+    <input type="number"name="YearBirth" max="2004" min="1900"></p>
+    </ol>
+
+    <p>Województwo:
+        <select>
+        <option>dolnośląskie</option>
+        <option>kujawsko-pomorskie</option>
+        <option>lubelskie</option>
+        <option>lubuskie</option>
+        <option>łódzkie</option>
+        <option>małopolskie</option>
+        <option >mazowieckie</option>
+        <option >opolskie</option>
+        <option >podkarpackie</option>
+        <option >podlaskie</option>
+        <option >pomorskie</option>
+        <option >śląskie</option>
+        <option >świętokrzyskie</option>
+        <option >warmińsko-mazurskie</option>
+        <option >wielkopolskie</option>
+        <option >Zachodniopomorskie</option>
+    </select>
+        </p>
+<ol>
+<p>Miasto: <input type="text" name="City"></p>
+
+    <p>Ulica: <input type="text" name="Street"> numer domu: <input type="number" name="streetnumber" maxlength="3"
+                                                                   min="1" max="999">
+        numer mieszkania<input type="number" name="homenumber" maxlength="3"  min="1" max="999"></p>
+</ol>
+
+    <p><h4>Opisz swoje doswiadczenie programistyczne</h4>   <textarea rows="20" cols="100"></textarea></p>
+        <button>
+            <p>Zapisz</p>
+        </button>
+    </ul>
+    </div>
+</form>
+</body>
+</html>
